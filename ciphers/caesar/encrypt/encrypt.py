@@ -1,11 +1,18 @@
-def encrypt(letter, key, alphabet):
+from ciphers.caesar.change_message import ChangeMessage
+
+
+class Encryption(ChangeMessage):
     """
-    Функция шифрования символа
-    :param letter: символ, который нужно зашифровать
-    :param key: ключ, определяющий шаг для шифрования
-    :param alphabet: алфавит, по которому шифруем
-    :return: зашифрованный символ
+    Класс для шифрования сообщения
     """
-    position = alphabet.find(letter)
-    new_position = (position + key) % len(alphabet)
-    return alphabet[new_position]
+
+    def change_letter(self, letter, alphabet):
+        """
+        Функция шифрования символа
+        :param letter: символ, который нужно защифровать
+        :param alphabet: алфавит, по которому шифруется символ
+        :return: зашифрованный символ
+        """
+        position = alphabet.find(letter)
+        new_position = (position + self.key) % len(alphabet)
+        return alphabet[new_position]
