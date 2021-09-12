@@ -1,3 +1,6 @@
+"""
+Здесь хранятся алфавиты
+"""
 alphabet_upper_en = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 alphabet_upper_ru = 'АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ'
 alphabet_lower_en = 'abcdefghijklmnopqrstuvwxyz'
