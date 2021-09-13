@@ -1,3 +1,4 @@
+from change_message import ChangeMessage
 
 
 def show_changed_message(cipher):
@@ -16,5 +17,3 @@ message = input("Введите сообщение, которое нужно з
 
 # Ввод текста ключа
 key = input("Введите текст ключа: ")
-
-
