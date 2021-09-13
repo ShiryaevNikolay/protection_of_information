@@ -1,4 +1,4 @@
-from change_message import ChangeMessage
+from encrypt.encrypt import Encryption
 
 
 def show_changed_message(cipher):
@@ -17,3 +17,5 @@ message = input("Введите сообщение, которое нужно з
 
 # Ввод текста ключа
 key = input("Введите текст ключа: ")
+
+show_changed_message(Encryption(message, key))
